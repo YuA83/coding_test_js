@@ -1,6 +1,7 @@
 function solution(arr) {
     // return [...arr.map(v => v.toString().repeat(v)).join("")].map(v => +v);
     
+    /*
     let X = [];
     
     arr.forEach(v => {
@@ -9,4 +10,7 @@ function solution(arr) {
     });
     
     return X;
+    */
+    
+    return arr.flatMap(v => Array(v).fill(v));
 }
