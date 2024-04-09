@@ -5,8 +5,10 @@ function solution(strArr) {
     }, {});
     
     const maxKey = Object.keys(len).reduce((p, c) => {
-        if (len[p] === len[c]) return +p > +c? p : c;
-        else return len[p] > len[c]? p : c;
+        // if (len[p] === len[c]) return +p > +c? p : c;
+        // else return len[p] > len[c]? p : c;
+        
+        return len[p] <= len[c]? c : p;
     });
     
     return len[maxKey];
