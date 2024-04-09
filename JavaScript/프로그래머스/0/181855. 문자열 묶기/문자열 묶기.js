@@ -4,12 +4,14 @@ function solution(strArr) {
         return p;
     }, {});
     
-    const maxKey = Object.keys(len).reduce((p, c) => {
+    // const maxKey = Object.keys(len).reduce((p, c) => {
         // if (len[p] === len[c]) return +p > +c? p : c;
         // else return len[p] > len[c]? p : c;
         
-        return len[p] <= len[c]? c : p;
-    });
+        // return len[p] <= len[c]? c : p;
+    // });
     
-    return len[maxKey];
+    // return len[maxKey];
+    
+    return Math.max(...Object.values(len));
 }
