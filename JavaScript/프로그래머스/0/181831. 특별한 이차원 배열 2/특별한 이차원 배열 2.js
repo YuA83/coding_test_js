@@ -1,4 +1,5 @@
 function solution(arr) {
+    /*
     // let answer = true;
     
     for (let i = 0; i < arr.length; i++) {
@@ -10,4 +11,7 @@ function solution(arr) {
     
     // return +answer;
     return 1;
+    */
+    
+    return +arr.every((item, i) => item.every((_, j) => arr[i][j] === arr[j][i]));
 }
